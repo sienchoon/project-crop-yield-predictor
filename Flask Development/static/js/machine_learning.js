@@ -64,19 +64,36 @@ const runPrediction = (event) => {
     disableButtonClick();
     
     // Return the values chosen using JQuery
-    // For the Multiselect dropdown menus, trim() is used for every selected value string item to remove any spacing from either ends prior to URI encoding
+    // For the dropdown menus, trim() is used for every selected value string item to remove any spacing from either ends prior to URI encoding
     // encodeURIComponent() is used to replace the spacing in between the string item (e.g. "Castor seed") with '%20' to be HTML format friendly (e.g. "Castor%20seed")
-    let crop_sel = $('#selCrop option:selected').map(function(a, item){return encodeURIComponent(item.value.trim());}).get();
-    let season_sel = $('#selSeason option:selected').map(function(a, item){return encodeURIComponent(item.value.trim());}).get();
- 
-    let crop_str = crop_sel.join(',');
-    let season_str = season_sel.join(',');
+    let crop_val = $('#selCrop option:selected').val()
+    let season_val = $('#selSeason option:selected').val()
+
     let area_num = d3.select("#txtArea").node().value;
     let production_num = d3.select("#txtProduction").node().value;
     let annual_rainfall_num = d3.select("#txtRainfall").node().value;
     let fertilizer_num = d3.select("#txtFertilizer").node().value;
     let pesticide_num = d3.select("#txtPesticide").node().value;
 
+    // Validation
+    if (crop_val === "" || season_val === "") {
+        alert("Please Select Crop & Season in the Dropdown Boxes!");
+        enableButtonClick();
+        return;
+    }
+
+    if (!isNumeric(area_num) || !isNumeric(production_num) || !isNumeric(annual_rainfall_num) || !isNumeric(fertilizer_num) || !isNumeric(pesticide_num)) {
+        alert("All text fields must contain numerical values only!");
+        enableButtonClick();
+        return;
+    }
+
+    let crop_str = encodeURIComponent(crop_val.trim())
+    let season_str = encodeURIComponent(season_val.trim())
+
+    if (crop_str == 'Arhar%2FTur') {
+        crop_str = 'ArharTur';
+    }
     
     // Use backticks (``) in order to output template literals i.e. output something like how f-strings are written in Python
     // Dynamically generate the URL component for the Dynamic API Route based on the selected filter options
@@ -102,6 +119,10 @@ const runPrediction = (event) => {
 };   
 
 
+function isNumeric(value) {
+    return !isNaN(parseFloat(value)) && isFinite(value);
+}
+
 
 // Callback function to populate the Dropdown Select Menus
 const populate_Dropdowns = (dropdownCrops, dropdownSeasons, arrayCrops, arraySeasons) => {
@@ -124,4 +145,3 @@ const populate_Dropdowns = (dropdownCrops, dropdownSeasons, arrayCrops, arraySea
         dropdownSeasons.append("option").text(Season).property("value", Season);
     });
 };
-

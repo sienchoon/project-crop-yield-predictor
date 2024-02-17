@@ -3,6 +3,8 @@ from flask import Flask, jsonify, render_template
 import pandas as pd
 import joblib
 
+from urllib.parse import unquote
+
 # Use Flask CORS Library to allow access to fetch from Python Flask API routes (when running locally) that would have otherwise been blocked by the CORS policy by default
 from flask_cors import CORS
 
@@ -11,7 +13,7 @@ from flask_cors import CORS
 #################################################
 
 # Reference: https://www.kaggle.com/datasets/akshatgupta7/crop-yield-in-indian-states-dataset/data
-yield_df = pd.read_csv("crop_yield.csv")
+yield_df = pd.read_csv("final_crop_yield.csv")
 
 model_pipeline = joblib.load('./pkl/RF Model.pkl')
 
@@ -61,14 +63,20 @@ def feature_options():
 
 
 ############# Route #3 ([Dynamic API Route]  Run ML Model Prediction based on Test Data Applied by User) ###############
-@app.route("/api/v1.0/<crop_str>/<season_str>/<area_num>/<production_num>/<annual_rainfall_num>/<fertilizer_num>/<pesticide_num>")
+@app.route("/api/v1.0/<crop_str>/<season_str>/<area_num>/<production_num>/<annual_rainfall_num>/<fertilizer_num>/<pesticide_num>", methods = ['GET'])
 def filtered_data(crop_str, season_str, area_num, production_num, annual_rainfall_num, fertilizer_num, pesticide_num):
     # Used everytime the user runs a new prediction from the webpage (index.html)
     # Returns the predicted crop yield value based on the user's input
 
+    if (crop_str == "ArharTur") :
+        crop_str = "Arhar/Tur"
+
+    print(unquote(crop_str))
+    print(season_str)
+
     new_test_df = pd.DataFrame({
-        "Crop": [crop_str],
-        "Season": [season_str],
+        "Crop": [unquote(crop_str)],                        # Using urllib.parse, perform URL decoding the string element (e.g. Rapeseed%20%26Mustard ----> Rapeseed &Mustard)
+        "Season": [unquote(season_str)],                    
         "Area": [float(area_num)],
         "Production": [float(production_num)],
         "Annual_Rainfall": [float(annual_rainfall_num)],
