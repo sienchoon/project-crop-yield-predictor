@@ -29,6 +29,21 @@ In this project we outline the tools, language and libraries required to complet
 
 <br><br><br><br><br><br></br>
 
+## ➡️ Project Workflow
+
+![alt](Images/pipeline.png)
+
+Project timeline: 
+
+Project Initiate on 6th February 2024<br>
+    - Data Collection and Cleaning<br>
+    - Model Training and Evaluation<br>
+    - Model Deployment<br>
+    - App Deployment
+    <br><br>
+Project Completion on 19th February 2024<br>
+Project Presentation on 20th February 2024
+
 
 ## 🔃 Prediction Model
 
@@ -56,7 +71,7 @@ The prediction error histogram, with a mean error of -3.25 and a median error cl
 
 
 
-## Application Demo
+## 📱 Application Demo
 
 Initial stage of application development
 
@@ -66,7 +81,7 @@ Final stage of application development
 
 ![Alt Text]()
 
-## Summary 
+## 🔖 Summary 
 
 Ultimately, the objective of developing a crop yield prediction model is to provide farmers and stakeholders with valuable insights that facilitate decision-making processes. By leveraging historical data, real-time information, and advanced analytics, predictive models enable stakeholders to make more informed and strategic decisions throughout the agricultural production cycle.
 
