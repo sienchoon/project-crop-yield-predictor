@@ -1,7 +1,9 @@
 # Crop Yield Prediction Model
 Project 4 for Monash BootCamp
 
-![](Images/cropyield.png)
+<div style="text-align:center">
+    <img src="Images/cropyield.png" alt="Crop Yield Image">
+</div>
 
 ## 🖥 Project Objetive
 
