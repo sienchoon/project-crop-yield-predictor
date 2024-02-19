@@ -34,6 +34,8 @@ In this project we outline the tools, language and libraries required to complet
 
 This repository contains a machine learning pipeline designed to predict crop yields from various agricultural features. The primary model used is a RandomForestRegressor, encapsulated within a scikit-learn pipeline that includes preprocessing steps for both numerical and categorical data. This model is selected for its excellent performance with non-linear data and resistance to overfitting, which makes it an appropriate choice for our dataset that includes various feature interactions.
 
+![alt text](Images/image%20(1).png)
+
 ### Data Preprocessing
 
 The crop_yield.csv dataset is preprocessed by removing the state column to avoid biases due to state-specific variations. Numerical features are scaled, and categorical features are one-hot encoded.
@@ -58,7 +60,7 @@ The prediction error histogram, with a mean error of -3.25 and a median error cl
 
 Initial stage of application development
 
-![Alt Text](<Flask Development/Predictor_Demo.gif>))
+![Alt Text](<Flask Development/Predictor_Demo.gif>)
 
 Final stage of application development
 
