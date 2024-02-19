@@ -9,6 +9,7 @@ Project 4 for Monash BootCamp
 
 The primary goal of predicting crop yield using machine learning is to optimize agricultural production. By accurately forecasting crop yields, farmers and agricultural stakeholders can make informed decisions regarding planting schedules, resource allocation, and crop management practices
 
+
 ## 🧰 Languages and Tools
 
 In this project we outline the tools, language and libraries required to complete the project brief.
@@ -33,25 +34,36 @@ In this project we outline the tools, language and libraries required to complet
 
 This repository contains a machine learning pipeline designed to predict crop yields from various agricultural features. The primary model used is a RandomForestRegressor, encapsulated within a scikit-learn pipeline that includes preprocessing steps for both numerical and categorical data. This model is selected for its excellent performance with non-linear data and resistance to overfitting, which makes it an appropriate choice for our dataset that includes various feature interactions.
 
-### <ul>Data Preprocessing</ul>
+### Data Preprocessing
 
 The crop_yield.csv dataset is preprocessed by removing the state column to avoid biases due to state-specific variations. Numerical features are scaled, and categorical features are one-hot encoded.
 
-### <ul>Model Training and Evaluation</u>
+### Model Training and Evaluation
 
 The RandomForestRegressor is trained on the dataset. Model performance is evaluated using the RMSE, MAE, and R-squared score. Predictions are compared with actual yields to assess the model's accuracy.
 
-### <ul>SHAP Value Analysis</ul>
+### SHAP Value Analysis
 
 SHAP values are computed to interpret the model's predictions, providing insight into the significance and impact of each feature on the predicted output.
 
-### <ul>Model Evaluation</ul>
+### Model Evaluation
 
 The scatter plot of actual vs. predicted yields shows a strong positive correlation, indicating the model's predictive capabilities. The ideal prediction line serves as a benchmark for accuracy.
 
 The prediction error histogram, with a mean error of -3.25 and a median error close to zero, suggests a slight tendency of the model to underestimate the yields, but with a balanced error distribution overall.
 
 
+
+## Application Demo
+
+Initial stage of application development
+
+![](Flask Development\Predictor_Demo.gif)
+
+
+## Summary 
+
+Ultimately, the objective of developing a crop yield prediction model is to provide farmers and stakeholders with valuable insights that facilitate decision-making processes. By leveraging historical data, real-time information, and advanced analytics, predictive models enable stakeholders to make more informed and strategic decisions throughout the agricultural production cycle.
 
 ## 👨‍💼💻👩‍💼 Collaborators
 
