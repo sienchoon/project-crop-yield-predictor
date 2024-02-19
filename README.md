@@ -1,6 +1,8 @@
 # Crop Yield Prediction Model
 Project 4 for Monash BootCamp
 
+![](Images/cropyield.png)
+
 ## 🖥 Project Objetive
 
 The primary goal of predicting crop yield using machine learning is to optimize agricultural production. By accurately forecasting crop yields, farmers and agricultural stakeholders can make informed decisions regarding planting schedules, resource allocation, and crop management practices
@@ -31,21 +33,21 @@ This repository contains a machine learning pipeline designed to predict crop yi
 
 ### <ul>Data Preprocessing</ul>
 
-        The crop_yield.csv dataset is preprocessed by removing the state column to avoid biases due to state-specific variations. Numerical features are scaled, and categorical features are one-hot encoded.
+The crop_yield.csv dataset is preprocessed by removing the state column to avoid biases due to state-specific variations. Numerical features are scaled, and categorical features are one-hot encoded.
 
 ### <ul>Model Training and Evaluation</u>
 
-        The RandomForestRegressor is trained on the dataset. Model performance is evaluated using the RMSE, MAE, and R-squared score. Predictions are compared with actual yields to assess the model's accuracy.
+The RandomForestRegressor is trained on the dataset. Model performance is evaluated using the RMSE, MAE, and R-squared score. Predictions are compared with actual yields to assess the model's accuracy.
 
 ### <ul>SHAP Value Analysis</ul>
 
-        SHAP values are computed to interpret the model's predictions, providing insight into the significance and impact of each feature on the predicted output.
+SHAP values are computed to interpret the model's predictions, providing insight into the significance and impact of each feature on the predicted output.
 
 ### <ul>Model Evaluation</ul>
 
-        The scatter plot of actual vs. predicted yields shows a strong positive correlation, indicating the model's predictive capabilities. The ideal prediction line serves as a benchmark for accuracy.
+The scatter plot of actual vs. predicted yields shows a strong positive correlation, indicating the model's predictive capabilities. The ideal prediction line serves as a benchmark for accuracy.
 
-        The prediction error histogram, with a mean error of -3.25 and a median error close to zero, suggests a slight tendency of the model to underestimate the yields, but with a balanced error distribution overall.
+The prediction error histogram, with a mean error of -3.25 and a median error close to zero, suggests a slight tendency of the model to underestimate the yields, but with a balanced error distribution overall.
 
 
 
