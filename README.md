@@ -58,8 +58,11 @@ The prediction error histogram, with a mean error of -3.25 and a median error cl
 
 Initial stage of application development
 
-![](Flask Development\Predictor_Demo.gif)
+![Alt Text](<Flask Development/Predictor_Demo.gif>))
 
+Final stage of application development
+
+![Alt Text]()
 
 ## Summary 
 
