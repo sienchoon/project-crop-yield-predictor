@@ -5,19 +5,19 @@
 </p>
 
 # Table of Contents
-1. [Project Members](#👨‍💼-💻-👩‍💼-project-members)
-2. [Project Overview](#🖥-project-overview)
-3. [Application Demo Preview (Final Version)](#📱-application-demo-preview-final-version)
-3. [Application Demo Preview (Early Stages)](#📱-application-demo-preview-early-stages)
+1. [Project Members](#project-members)
+2. [Project Overview](#project-overview)
+3. [Application Demo Preview (Final Version)](#application-demo-preview-final-version)
+3. [Application Demo Preview (Early Stages)](#application-demo-preview-early-stages)
 4. [Final Repository Structure](#final-repository-structure)
-5. [Languages and Tools](#🧰-languages-and-tools)
-6. [Project Workflow](#➡️-project-workflow)
-7. [Target Audience](#👤-target-audience)
-8. [Prediction Model](#🔃-prediction-model)
-9. [Summary](#🔖-summary)
+5. [Languages and Tools](#languages-and-tools)
+6. [Project Workflow](#project-workflow)
+7. [Target Audience](#target-audience)
+8. [Prediction Model](#prediction-model)
+9. [Summary](#summary)
 
 
-## 👨‍💼💻👩‍💼 Project Members
+## Project Members
 | <center>Contributors</center>    | <center>Github Profile</center>    |
 | ----------------| -------------------------------------- |
 | <center>Gabriel Adriano</center>      | https://github.com/gadriano11       |    
@@ -25,17 +25,17 @@
 | <center>Choon Sien Wong</center>| https://github.com/sienchoon              |
 
 
-## 🖥 Project Overview
+## Project Overview
 For this project, we utilised the [Agricultural Crop Yield in Indian States Dataset](https://www.kaggle.com/datasets/akshatgupta7/crop-yield-in-indian-states-dataset) to achieve our primary goal of predicting crop yield using machine learning. By accurately forecasting crop yields, farmers and agricultural stakeholders can make informed decisions regarding planting schedules, resource allocation, and crop management practices.
 
 
-## 📱 Application Demo Preview (Final Version)
+## Application Demo Preview (Final Version)
 <p align="center">
 <img src="Images/Final_Predictor_Demo.gif" width="75%">
 </p>
 
 
-## 📱 Application Demo Preview (Early Stages)
+## Application Demo Preview (Early Stages)
 <p align="center">
 <img src="Images/Predictor_Demo.gif" width="75%">
 </p>
@@ -62,7 +62,7 @@ For this project, we utilised the [Agricultural Crop Yield in Indian States Data
 ```
 
 
-## 🧰 Languages and Tools
+## Languages and Tools
 In this project, we outline the tools, language and libraries required to complete the project brief.
 <br>
 
@@ -84,7 +84,7 @@ In this project, we outline the tools, language and libraries required to comple
 <img alt="HTML5" width="80px" style="padding-right:12px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"  /> 
 </p>
 
-## ➡️ Project Workflow
+## Project Workflow
 ![alt](Images/pipeline.png)
 
 Project timeline: 
@@ -99,13 +99,13 @@ Project Completion on 19th February 2024<br>
 Project Presentation on 20th February 2024
 
 
-## 👤 Target Audience
+## Target Audience
 <p align="center">
     <img src="Images/target_audience.PNG" width="75%" alt="Crop Yield Predictor (Target Audience)">
 </p>
 
 
-## 🔃 Prediction Model
+## Prediction Model
 
 This repository contains a machine learning pipeline designed to predict crop yields from various agricultural features. The primary model used is a RandomForestRegressor, encapsulated within a scikit-learn pipeline that includes preprocessing steps for both numerical and categorical data. This model is selected for its excellent performance with non-linear data and resistance to overfitting, which makes it an appropriate choice for our dataset that includes various feature interactions.
 
@@ -133,7 +133,7 @@ The scatter plot of actual vs. predicted yields shows a strong positive correlat
 The prediction error histogram, with a mean error of -3.25 and a median error close to zero, suggests a slight tendency of the model to underestimate the yields, but with a balanced error distribution overall.
 
 
-## 🔖 Summary 
+## Summary 
 
 Ultimately, the objective of developing a crop yield prediction model is to provide farmers and stakeholders with valuable insights that facilitate decision-making processes. By leveraging historical data, real-time information, and advanced analytics, predictive models enable stakeholders to make more informed and strategic decisions throughout the agricultural production cycle.
 
