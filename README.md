@@ -5,16 +5,16 @@
 </p>
 
 # Table of Contents
-1. [Project Members](#project-members)
-2. [Project Overview](#project-overview)
-3. [Application Demo Preview (Final Version)](#application-demo-preview-final-version)
-3. [Application Demo Preview (Early Stages)](#application-demo-preview-early-stages)
+1. [Project Members](#👨‍💼-💻-👩‍💼-project-members)
+2. [Project Overview](#🖥-project-overview)
+3. [Application Demo Preview (Final Version)](#📱-application-demo-preview-final-version)
+3. [Application Demo Preview (Early Stages)](#📱-application-demo-preview-early-stages)
 4. [Final Repository Structure](#final-repository-structure)
-5. [Languages and Tools](#languages-and-tools)
-6. [Project Workflow](#project-workflow)
-7. [Target Audience](#target-audience)
-8. [Prediction Model](#prediction-model)
-9. [Summary](#summary)
+5. [Languages and Tools](#🧰-languages-and-tools)
+6. [Project Workflow](#➡️-project-workflow)
+7. [Target Audience](#👤-target-audience)
+8. [Prediction Model](#🔃-prediction-model)
+9. [Summary](#🔖-summary)
 
 
 ## 👨‍💼💻👩‍💼 Project Members
