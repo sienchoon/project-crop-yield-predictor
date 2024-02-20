@@ -1,7 +1,7 @@
 # India: Crop Yield Prediction Model
 
 <p align="center">
-    <img src="Images/Project_Title.png" alt="Project Thumbnail">
+    <img src="Images/Project_Title.PNG" alt="Project Thumbnail">
 </p>
 
 # Table of Contents
@@ -30,11 +30,15 @@ For this project, we utilised the [Agricultural Crop Yield in Indian States Data
 
 
 ## 📱 Application Demo Preview (Final Version)
-![Alt Text](<Images/Final_Predictor_Demo.gif>)
+<p align="center">
+<img src="Images/Final_Predictor_Demo.gif" width="75%">
+</p>
 
 
 ## 📱 Application Demo Preview (Early Stages)
-![Alt Text](<Images/Predictor_Demo.gif>)
+<p align="center">
+<img src="Images/Predictor_Demo.gif" width="75%">
+</p>
 
 
 ## Final Repository Structure
@@ -80,8 +84,6 @@ In this project, we outline the tools, language and libraries required to comple
 <img alt="HTML5" width="80px" style="padding-right:12px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"  /> 
 </p>
 
-<br><br><br><br><br><br></br>
-
 ## ➡️ Project Workflow
 ![alt](Images/pipeline.png)
 
@@ -99,7 +101,7 @@ Project Presentation on 20th February 2024
 
 ## 👤 Target Audience
 <p align="center">
-    <img src="Images/target_audience.png" alt="Crop Yield Predictor (Target Audience)">
+    <img src="Images/target_audience.PNG" width="75%" alt="Crop Yield Predictor (Target Audience)">
 </p>
 
 
